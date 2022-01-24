@@ -9,22 +9,22 @@ const navBarStyle = css`
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
-  font-size: 17px;
+  font-size: 15px;
   cursor: pointer;
 
   li {
-    border: 3px solid white;
     list-style: none;
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
   }
   a {
-    transition: all 0.3s ease-in-out;
+    text-decoration: none;
   }
 
   a:hover {
     transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid;
   }
 `;
 
@@ -67,6 +67,7 @@ const mainHeader = css`
 `;
 
 const contactUsButtons = css`
+  position: sticky;
   border: 2px solid red;
   border-radius: 32px;
   font-size: 17px;
