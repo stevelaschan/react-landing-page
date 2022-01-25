@@ -87,7 +87,42 @@ const mainHeader = css`
   }
 `;
 
+const logosStyle = css`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .logoOne {
+    top: -7px;
+    margin-right: 0;
+    margin-left: 0;
+    background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3…935bf3cbbe7038ca0d5220_Educative%20Logo%20(1).png');
+    background-size: 90px;
+    opacity: 1;
+  }
+  .logoTwo {
+    left: 10px;
+    top: -7px;
+    margin-left: 0;
+    background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3…/60935bf32b14c4174c2976f9_Streak%20Logo%20(1).png');
+    background-position: 50% 50%;
+    background-size: 70px;
+    opacity: 1;
+  }
+  .logoThree {
+    left: 9px;
+    top: -13px;
+    margin-left: 0;
+    background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/60936f3eead891a149b2bb33_LIGR.png');
+    background-size: 90px;
+    opacity: 1;
+    background-position: 50% 50%;
+  }
+`;
+
 const reliableDesignersHeadingStyle = css`
+  /* border: 3px solid white; */
   margin-right: auto;
   margin-bottom: 64px;
   margin-left: auto;
@@ -96,6 +131,11 @@ const reliableDesignersHeadingStyle = css`
   font-weight: 700;
   text-align: center;
   font-size: 24px;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
 
   span {
     margin-top: 20px;
@@ -120,6 +160,7 @@ const qualityCommunicationDeadlinesHeadingStyle = css`
     padding: 170px 20px;
     border-radius: 24px;
     box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
+    background-image: url(https://global-uploads.webflow.com/5dd3495558fd7f3…52bc/605200ca638f38edafded84c_Rectangle%20482.svg);
   }
 
   .communicationHeading {
@@ -128,6 +169,7 @@ const qualityCommunicationDeadlinesHeadingStyle = css`
     padding: 170px 20px;
     border-radius: 24px;
     box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
+    background-image: url(https://global-uploads.webflow.com/5dd3495558fd7f3…52bc/605200ca638f38edafded84c_Rectangle%20482.svg);
   }
 
   .deadlinesHeading {
@@ -136,6 +178,7 @@ const qualityCommunicationDeadlinesHeadingStyle = css`
     padding: 170px 20px;
     border-radius: 24px;
     box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
+    background-image: url(https://global-uploads.webflow.com/5dd3495558fd7f3…52bc/605200ca638f38edafded84c_Rectangle%20482.svg);
   }
 
   h3 {
@@ -198,7 +241,6 @@ const contactUsButtons = css`
   cursor: pointer;
   padding: 10px 15px;
   bottom: 0;
-  /* justify-self: right; */
   right: 0;
   background-color: #fd435a;
   box-shadow: 0 0 0 6px rgb(253 87 108 / 25%);
@@ -252,6 +294,31 @@ function App() {
       </div>
       <div css={basicBackgroundColor}>
         <section>
+          <div css={logosStyle}>
+            <a href="logoOne" className="logoOne">
+              1
+            </a>
+            <a href="logoTwo" className="logoTwo">
+              2
+            </a>
+            <a href="logoThree" className="logoThree">
+              3
+            </a>
+            <a href="logoFour" className="logoFour">
+              4
+            </a>
+            <a href="logoFive" className="logoFive">
+              5
+            </a>
+            <a href="logoSix" className="logoSix">
+              6
+            </a>
+            <a href="logoSeven" className="logoSeven">
+              7
+            </a>
+          </div>
+          <br />
+          <br />
           <div css={reliableDesignersHeadingStyle}>
             <h2>
               We get it. Reliable Designers <span>are hard to find</span>
