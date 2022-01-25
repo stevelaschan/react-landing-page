@@ -12,7 +12,7 @@ ReactDOM.render(
     <Global
       styles={css`
         * {
-          background-color: #494848;
+          background-color: #0f123d;
           font-family: sans-serif;
           color: white;
         }

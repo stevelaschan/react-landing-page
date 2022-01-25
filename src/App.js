@@ -2,7 +2,14 @@
 
 import './App.css';
 import { css } from '@emotion/react';
-import logo from './logo.svg';
+
+const backgroundImageStyle = css`
+  background-image: url(https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/5f1830b470eef28ef4a043ac_homepagev2.svg);
+  background-position: 0 100%;
+  background-size: cover;
+  justify-content: flex-start;
+  width: 100%;
+`;
 
 const navBarStyle = css`
   display: flex;
@@ -29,12 +36,17 @@ const navBarStyle = css`
 `;
 
 const buttons = css`
-  border: 2px solid red;
-  border-radius: 32px;
-  font-size: 17px;
+  border: 1px solid #fd435a;
+  border-radius: 45px;
+  font-size: 15px;
   cursor: pointer;
   margin-left: 10px;
   padding: 16px 32px;
+  background-color: #fd435a;
+  box-shadow: 0 0 0 6px rgb(253 87 108 / 25%);
+  transition: box-shadow 0.2s, color 0.2s, background-color 0.2s;
+  font-weight: 700;
+  letter-spacing: 1px;
 `;
 
 const mainHeader = css`
@@ -43,7 +55,7 @@ const mainHeader = css`
   margin: auto;
 
   h1 {
-    border: 3px solid white;
+    /* border: 3px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +68,7 @@ const mainHeader = css`
   }
 
   h3 {
-    border: 3px solid white;
+    /* border: 3px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,57 +80,64 @@ const mainHeader = css`
 
 const contactUsButtons = css`
   position: sticky;
-  border: 2px solid red;
+  border: 2px solid #fd435a;
   border-radius: 32px;
-  font-size: 17px;
+  font-size: 14px;
   cursor: pointer;
-  padding: 16px 32px;
-  bottom: 0;
-  right: 0;
+  padding: 10px 15px;
+  bottom: -0;
+  right: -0;
+  background-color: #fd435a;
+  box-shadow: 0 0 0 6px rgb(253 87 108 / 25%);
+  transition: box-shadow 0.2s, color 0.2s, background-color 0.2s;
+  font-weight: 700;
+  letter-spacing: 2px;
 `;
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <header css={navBarStyle}>
-          <nav>
-            <ul>
-              <li>
-                <a href="#casestudies">Case Studies</a>
-              </li>
-              <li>
-                <a href="#pricing">Pricing</a>
-              </li>
-              <li>
-                <a href="#ourwork">Our Work</a>
-              </li>
-              <li>
-                <a href="#ourplatform">Our Platform</a>
-              </li>
-              <li>
-                <a href="#about">More</a>
-              </li>
-              <li>
-                <a href="#login">Login</a>
-              </li>
-            </ul>
-          </nav>
-          <button css={buttons}>Schedule Demo</button>
-        </header>
-      </div>
-      <div>
-        <section css={mainHeader}>
-          <h1>Get a Superhero Web Developer To Grow Your Business</h1>
-          <h3>
-            We provide an experienced design team that works with you everyday
-            to create high-quality design asset to help grow your business. Zero
-            headaches, fixed pricing and no contracts
-          </h3>
-          <div>
-            <button css={buttons}>See My Portfolio</button>
-          </div>
-        </section>
+      <div css={backgroundImageStyle}>
+        <div>
+          <header css={navBarStyle}>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#casestudies">Case Studies</a>
+                </li>
+                <li>
+                  <a href="#pricing">Pricing</a>
+                </li>
+                <li>
+                  <a href="#ourwork">Our Work</a>
+                </li>
+                <li>
+                  <a href="#ourplatform">Our Platform</a>
+                </li>
+                <li>
+                  <a href="#more">More</a>
+                </li>
+                <li>
+                  <a href="#login">Login</a>
+                </li>
+              </ul>
+            </nav>
+            <button css={buttons}>Schedule Demo</button>
+          </header>
+        </div>
+        <div>
+          <section css={mainHeader}>
+            <h1>Get A Superhero Design Team To Grow Your Business</h1>
+            <h3>
+              We provide an experienced design team that works with you everyday
+              to create high-quality design asset to help grow your business.
+              Zero headaches, fixed pricing and no contracts
+            </h3>
+            <div>
+              <button css={buttons}>SEE OUR PRICING</button>
+            </div>
+          </section>
+        </div>
       </div>
       <div>
         <section>
@@ -127,9 +146,7 @@ function App() {
           </h2>
         </section>
       </div>
-      <div>
-        <button css={contactUsButtons}>Contact Us</button>
-      </div>
+      <button css={contactUsButtons}>Contact Us</button>
     </div>
   );
 }
