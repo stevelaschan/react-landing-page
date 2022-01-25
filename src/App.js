@@ -68,16 +68,21 @@ const buttons = css`
 `;
 
 const mainHeader = css`
+  /* border: 3px solid white; */
+  display: flex;
   height: 90vh;
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 130px;
 
   h1 {
     /* border: 3px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: auto;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 7px rgb(0 0 0 / 10%);
     font-size: 3em;
@@ -223,7 +228,7 @@ const weMakeItEasyHeadingStyle = css`
   margin-right: auto;
   margin-bottom: 64px;
   margin-left: auto;
-  width: 500px;
+  width: 550px;
   line-height: 46px;
   font-weight: 700;
   text-align: center;
@@ -336,17 +341,21 @@ function App() {
             <button css={buttons}>Schedule Demo</button>
           </header>
         </section>
-        <section css={mainHeader}>
-          <h1>Get A Superhero Design Team To Grow Your Business</h1>
-          <h3>
-            We provide an experienced design team that works with you everyday
-            to create high-quality design asset to help grow your business. Zero
-            headaches, fixed pricing and no contracts
-          </h3>
-          <div>
-            <button css={buttons}>SEE OUR PRICING</button>
-          </div>
-        </section>
+        <div css={mainHeader}>
+          <section>
+            <h1>Get A Superhero Design Team To Grow Your Business</h1>
+            <h3>
+              We provide an experienced design team that works with you everyday
+              to create high-quality design asset to help grow your business.
+              Zero headaches, fixed pricing and no contracts
+            </h3>
+            <br />
+            <br />
+            <div>
+              <button css={buttons}>SEE OUR PRICING</button>
+            </div>
+          </section>
+        </div>
       </div>
       <div css={basicBackgroundColor}>
         <section>
