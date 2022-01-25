@@ -51,9 +51,20 @@ const buttons = css`
   padding: 16px 32px;
   background-color: #fd435a;
   box-shadow: 0 0 0 6px rgb(253 87 108 / 25%);
-  transition: box-shadow 0.2s, color 0.2s, background-color 0.2s;
   font-weight: 700;
   letter-spacing: 1px;
+  transform: translate3d(0, -5px, 5px);
+  transition: color 0.5s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+
+  /* buttons:focus {
+    outline: none;
+  }
+
+  buttons:hover {
+    transform: translate3d(0, 0, 0);
+    box-shadow: none;
+  } */
 `;
 
 const mainHeader = css`
@@ -123,7 +134,7 @@ const logosStyle = css`
 
 const reliableDesignersHeadingStyle = css`
   margin-right: auto;
-  margin-bottom: 64px;
+  margin-bottom: 24px;
   margin-left: auto;
   padding-top: 120px;
   width: 500px;
@@ -147,7 +158,7 @@ const reliableDesignersHeadingStyle = css`
 const qualityCommunicationDeadlinesHeadingSectionStyle = css`
   display: flex;
   flex-direction: row;
-  margin: 70px auto 70px auto;
+  margin: 30px auto 70px auto;
   padding: 20px 0;
   justify-content: center;
   width: 1200px;
