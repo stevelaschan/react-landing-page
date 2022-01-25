@@ -3,12 +3,19 @@
 import './App.css';
 import { css } from '@emotion/react';
 
+const basicBackgroundColor = css`
+  background-color: #0f123d;
+  margin: 0;
+  padding: 0;
+`;
+
 const backgroundImageStyle = css`
   background-image: url(https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/5f1830b470eef28ef4a043ac_homepagev2.svg);
   background-position: 0 100%;
   background-size: cover;
   justify-content: flex-start;
   width: 100%;
+  margin: 0;
 `;
 
 const navBarStyle = css`
@@ -59,12 +66,14 @@ const mainHeader = css`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25vh;
+    height: 400px;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 7px rgb(0 0 0 / 10%);
     font-size: 3em;
     line-height: 1.2em;
     font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   h3 {
@@ -97,7 +106,45 @@ const reliableDesignersHeadingStyle = css`
 
 const qualityCommunicationDeadlinesHeadingStyle = css`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 70px auto 70px auto;
+  padding: 20px 0;
+  justify-content: center;
+  width: 1200px;
+  height: auto;
+  align-items: flex-start;
+
+  .qualityHeading {
+    border: 3px solid white;
+    margin: 40px 25px;
+    padding: 170px 20px;
+    border-radius: 24px;
+    box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
+  }
+
+  .communicationHeading {
+    border: 3px solid white;
+    margin: 40px 25px;
+    padding: 170px 20px;
+    border-radius: 24px;
+    box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
+  }
+
+  .deadlinesHeading {
+    border: 3px solid white;
+    margin: 40px 25px;
+    padding: 170px 20px;
+    border-radius: 24px;
+    box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
+  }
+
+  h3 {
+    margin: 0 0 10px;
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
 `;
 
 const weMakeItEasyHeadingStyle = css`
@@ -164,7 +211,7 @@ function App() {
   return (
     <div className="App">
       <div css={backgroundImageStyle}>
-        <div>
+        <section>
           <header css={navBarStyle}>
             <nav>
               <ul>
@@ -190,22 +237,20 @@ function App() {
             </nav>
             <button css={buttons}>Schedule Demo</button>
           </header>
-        </div>
-        <div>
-          <section css={mainHeader}>
-            <h1>Get A Superhero Design Team To Grow Your Business</h1>
-            <h3>
-              We provide an experienced design team that works with you everyday
-              to create high-quality design asset to help grow your business.
-              Zero headaches, fixed pricing and no contracts
-            </h3>
-            <div>
-              <button css={buttons}>SEE OUR PRICING</button>
-            </div>
-          </section>
-        </div>
+        </section>
+        <section css={mainHeader}>
+          <h1>Get A Superhero Design Team To Grow Your Business</h1>
+          <h3>
+            We provide an experienced design team that works with you everyday
+            to create high-quality design asset to help grow your business. Zero
+            headaches, fixed pricing and no contracts
+          </h3>
+          <div>
+            <button css={buttons}>SEE OUR PRICING</button>
+          </div>
+        </section>
       </div>
-      <div>
+      <div css={basicBackgroundColor}>
         <section>
           <div css={reliableDesignersHeadingStyle}>
             <h2>
@@ -213,12 +258,22 @@ function App() {
             </h2>
           </div>
           <div css={qualityCommunicationDeadlinesHeadingStyle}>
-            <h3>Poor Quality</h3>
-            <p>You're tired of the guessing game to find the right designer.</p>
-            <h3>Bad Communication</h3>
-            <p>You're fed up with having to explain yourself multiple times.</p>
-            <h3>Missed Deadlines</h3>
-            <p>You lose hope as deadlines are missed over and over again.</p>
+            <div className="qualityHeading">
+              <h3>Poor Quality</h3>
+              <p>
+                You're tired of the guessing game to find the right designer.
+              </p>
+            </div>
+            <div className="communicationHeading">
+              <h3>Bad Communication</h3>
+              <p>
+                You're fed up with having to explain yourself multiple times.
+              </p>
+            </div>
+            <div className="deadlinesHeading">
+              <h3>Missed Deadlines</h3>
+              <p>You lose hope as deadlines are missed over and over again.</p>
+            </div>
           </div>
         </section>
         <section>
