@@ -122,10 +122,10 @@ const logosStyle = css`
 `;
 
 const reliableDesignersHeadingStyle = css`
-  /* border: 3px solid white; */
   margin-right: auto;
   margin-bottom: 64px;
   margin-left: auto;
+  padding-top: 120px;
   width: 500px;
   line-height: 46px;
   font-weight: 700;
@@ -144,7 +144,7 @@ const reliableDesignersHeadingStyle = css`
   }
 `;
 
-const qualityCommunicationDeadlinesHeadingStyle = css`
+const qualityCommunicationDeadlinesHeadingSectionStyle = css`
   display: flex;
   flex-direction: row;
   margin: 70px auto 70px auto;
@@ -153,40 +153,58 @@ const qualityCommunicationDeadlinesHeadingStyle = css`
   width: 1200px;
   height: auto;
   align-items: flex-start;
+  /* background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3…52bc/605200ca638f38edafded84c_Rectangle%20482.svg'); */
 
   .qualityHeading {
-    border: 3px solid white;
+    border: 1px solid #50b8dc;
     margin: 40px 25px;
-    padding: 170px 20px;
+    padding: 60px 20px;
     border-radius: 24px;
     box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
-    background-image: url(https://global-uploads.webflow.com/5dd3495558fd7f3…52bc/605200ca638f38edafded84c_Rectangle%20482.svg);
   }
 
-  .communicationHeading {
-    border: 3px solid white;
-    margin: 40px 25px;
-    padding: 170px 20px;
-    border-radius: 24px;
-    box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
-    background-image: url(https://global-uploads.webflow.com/5dd3495558fd7f3…52bc/605200ca638f38edafded84c_Rectangle%20482.svg);
+  .picOne {
+    position: static;
+    width: 190px;
+    padding: 10px;
   }
 
-  .deadlinesHeading {
-    border: 3px solid white;
+  .communicationHeadingSection {
+    border: 1px solid #50b8dc;
     margin: 40px 25px;
-    padding: 170px 20px;
+    padding: 60px 20px;
     border-radius: 24px;
     box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
-    background-image: url(https://global-uploads.webflow.com/5dd3495558fd7f3…52bc/605200ca638f38edafded84c_Rectangle%20482.svg);
+  }
+
+  .picTwo {
+    position: static;
+    width: 140px;
+    padding: 10px;
+  }
+
+  .deadlinesHeadingSection {
+    border: 1px solid #50b8dc;
+    margin: 40px 25px;
+    padding: 60px 20px;
+    border-radius: 24px;
+    box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 7%);
+  }
+
+  .picThree {
+    position: static;
+    width: 150px;
+    padding: 10px;
   }
 
   h3 {
     margin: 0 0 10px;
+    padding-top: 18px;
   }
 
   p {
     margin: 0 0 10px;
+    padding-top: 18px;
   }
 `;
 
@@ -207,7 +225,7 @@ const weMakeItEasyHeadingStyle = css`
   }
 `;
 
-const designCommunicatonDeadlineHeadingStyle = css`
+const designCommunicationDeadlineHeadingStyle = css`
   flex-direction: column;
 
   h3 {
@@ -230,6 +248,33 @@ const designCommunicatonDeadlineHeadingStyle = css`
     line-height: 28px;
     font-weight: 400;
     letter-spacing: 0.2px;
+  }
+
+  .designsHeadingSection {
+    border: 2px solid white;
+    display: flex;
+    width: 70%;
+    padding: 60px;
+    flex-direction: column;
+    border-radius: 6px;
+  }
+
+  .communicationHeadingSection {
+    border: 2px solid white;
+    display: flex;
+    width: 70%;
+    padding: 60px;
+    flex-direction: column;
+    border-radius: 6px;
+  }
+
+  .deadlinesHeadingSection {
+    border: 2px solid white;
+    display: flex;
+    width: 70%;
+    padding: 60px;
+    flex-direction: column;
+    border-radius: 6px;
   }
 `;
 
@@ -324,22 +369,45 @@ function App() {
               We get it. Reliable Designers <span>are hard to find</span>
             </h2>
           </div>
-          <div css={qualityCommunicationDeadlinesHeadingStyle}>
+          <div css={qualityCommunicationDeadlinesHeadingSectionStyle}>
             <div className="qualityHeading">
+              <div>
+                <img
+                  src="https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/5f81ab198f8ef5cee20912e1_problem%201.svg"
+                  alt="picOne"
+                  className="picOne"
+                />
+              </div>
               <h3>Poor Quality</h3>
               <p>
                 You're tired of the guessing game to find the right designer.
               </p>
             </div>
-            <div className="communicationHeading">
+            <div className="communicationHeadingSection">
+              <div>
+                <img
+                  src="https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/5f8d853d0d48df02c84afe79_Problem%202.svg"
+                  alt="picTwo"
+                  className="picTwo"
+                />
+              </div>
               <h3>Bad Communication</h3>
               <p>
                 You're fed up with having to explain yourself multiple times.
               </p>
             </div>
-            <div className="deadlinesHeading">
-              <h3>Missed Deadlines</h3>
-              <p>You lose hope as deadlines are missed over and over again.</p>
+            <div className="deadlinesHeadingSection">
+              <div>
+                <img
+                  src="https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/5f8d853dda2bfa799b5a7c06_big%20change%202.svg"
+                  alt="picThree"
+                  className="picThree"
+                />
+                <h3>Missed Deadlines</h3>
+                <p>
+                  You lose hope as deadlines are missed over and over again.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -349,38 +417,44 @@ function App() {
               Design doesn't have to be hard <span>We make it easy</span>.
             </h2>
           </div>
-          <div css={designCommunicatonDeadlineHeadingStyle}>
-            <h3>Breath-taking Designs</h3>
-            <br />
-            <p>
-              All of our designers are carefully vetted and have years of
-              experience working in the design industry.
-            </p>
-            <br />
-            <p>
-              You'll get a dedicated UI Designer, Graphic Designer, Illustrator
-              and Project Manager. With a full design team, getting
-              breath-taking designs couldn't be any easier!
-            </p>
-            <h3>Communication That Matters</h3>
-            <br />
-            <p>
-              With a dedicated Project Manager who cares about your success and
-              direct live-chat access to your experienced designers,
-              communication issues will be no more!
-            </p>
-            <h3>No More Missed Deadlines</h3>
-            <br />
-            <p>
-              Need that design done on a specific date? You can trust us to
-              deliver it on time. Once we commit to a date, we'll get it done.
-            </p>
-            <br />
-            <p>
-              Job requests will on average be delivered in a few business days.
-              Simpler tasks such as graphic designs and revisions will be
-              delivered within 24 hours.
-            </p>
+          <div css={designCommunicationDeadlineHeadingStyle}>
+            <div className="designsHeadingSection">
+              <h3>Breath-taking Designs</h3>
+              <br />
+              <p>
+                All of our designers are carefully vetted and have years of
+                experience working in the design industry.
+              </p>
+              <br />
+              <p>
+                You'll get a dedicated UI Designer, Graphic Designer,
+                Illustrator and Project Manager. With a full design team,
+                getting breath-taking designs couldn't be any easier!
+              </p>
+            </div>
+            <div className="communicationHeadingSection">
+              <h3>Communication That Matters</h3>
+              <br />
+              <p>
+                With a dedicated Project Manager who cares about your success
+                and direct live-chat access to your experienced designers,
+                communication issues will be no more!
+              </p>
+            </div>
+            <div className="deadlinesHeadingSection">
+              <h3>No More Missed Deadlines</h3>
+              <br />
+              <p>
+                Need that design done on a specific date? You can trust us to
+                deliver it on time. Once we commit to a date, we'll get it done.
+              </p>
+              <br />
+              <p>
+                Job requests will on average be delivered in a few business
+                days. Simpler tasks such as graphic designs and revisions will
+                be delivered within 24 hours.
+              </p>
+            </div>
           </div>
         </section>
       </div>
