@@ -12,6 +12,7 @@ ReactDOM.render(
     <Global
       styles={css`
         * {
+          box-sizing: border-box;
           background-color: #0f123d;
           font-family: sans-serif;
           color: white;
