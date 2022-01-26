@@ -2,7 +2,7 @@
 
 import { css } from '@emotion/react';
 
-export const AppStyle = css`
+export const appStyle = css`
   text-align: center;
 `;
 
@@ -106,39 +106,39 @@ export const mainHeader = css`
   }
 `;
 
-export const logosStyle = css`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+// export const logosStyle = css`
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   flex-wrap: wrap;
 
-  .logoOne {
-    top: -7px;
-    margin-right: 0;
-    margin-left: 0;
-    background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3…935bf3cbbe7038ca0d5220_Educative%20Logo%20(1).png');
-    background-size: 90px;
-    opacity: 1;
-  }
-  .logoTwo {
-    left: 10px;
-    top: -7px;
-    margin-left: 0;
-    background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3…/60935bf32b14c4174c2976f9_Streak%20Logo%20(1).png');
-    background-position: 50% 50%;
-    background-size: 70px;
-    opacity: 1;
-  }
-  .logoThree {
-    left: 9px;
-    top: -13px;
-    margin-left: 0;
-    background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/60936f3eead891a149b2bb33_LIGR.png');
-    background-size: 90px;
-    opacity: 1;
-    background-position: 50% 50%;
-  }
-`;
+//   .logoOne {
+//     top: -7px;
+//     margin-right: 0;
+//     margin-left: 0;
+//     background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3…935bf3cbbe7038ca0d5220_Educative%20Logo%20(1).png');
+//     background-size: 90px;
+//     opacity: 1;
+//   }
+//   .logoTwo {
+//     left: 10px;
+//     top: -7px;
+//     margin-left: 0;
+//     background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3…/60935bf32b14c4174c2976f9_Streak%20Logo%20(1).png');
+//     background-position: 50% 50%;
+//     background-size: 70px;
+//     opacity: 1;
+//   }
+//   .logoThree {
+//     left: 9px;
+//     top: -13px;
+//     margin-left: 0;
+//     background-image: url('https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/60936f3eead891a149b2bb33_LIGR.png');
+//     background-size: 90px;
+//     opacity: 1;
+//     background-position: 50% 50%;
+//   }
+// `;
 
 export const reliableDesignersHeadingStyle = css`
   margin-right: auto;
@@ -244,24 +244,28 @@ export const weMakeItEasyHeadingStyle = css`
   }
 `;
 
-export const designCommunicationDeadlineHeadingStyle = css`
-  flex-direction: column;
+export const designCommunicationHeadingStyle = css`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
 
+export const designCommunicationDeadlineHeadingStyle = css`
   h3 {
     width: 100%;
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 40px;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     height: auto;
   }
 
   p {
-    text-align: left;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 0;
+    padding: 0;
     color: rgba(212, 214, 255, 0.95);
     font-size: 15px;
     line-height: 28px;
@@ -270,30 +274,55 @@ export const designCommunicationDeadlineHeadingStyle = css`
   }
 
   .designsHeadingSection {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     width: 70%;
-    padding: 60px;
+    padding: 30px;
     flex-direction: column;
-    border-radius: 6px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+  }
+
+  .picFour {
+    top: 49px;
+    right: 0;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 80px;
   }
 
   .communicationHeadingSection {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     width: 70%;
-    padding: 60px;
+    padding: 30px;
     flex-direction: column;
-    border-radius: 6px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+  }
+
+  .picFive {
+    top: 60px;
+    right: 0;
+    width: 500px;
+    margin-top: 40px;
   }
 
   .deadlinesHeadingSection {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     width: 70%;
-    padding: 60px;
+    padding: 0;
     flex-direction: column;
-    border-radius: 6px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+    margin-left: 200px;
+  }
+
+  .picSix {
+    top: 20px;
+    right: 0;
+    width: 600px;
   }
 `;
 

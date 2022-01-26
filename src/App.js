@@ -1,13 +1,13 @@
 /** @jsxImportSource @emotion/react */
 
 import {
-  AppStyle,
+  appStyle,
   backgroundImageStyle,
   basicBackgroundColor,
   buttons,
   contactUsButtons,
   designCommunicationDeadlineHeadingStyle,
-  logosStyle,
+  designCommunicationHeadingStyle,
   mainHeader,
   navBarStyle,
   qualityCommunicationDeadlinesHeadingSectionStyle,
@@ -17,7 +17,7 @@ import {
 
 function App() {
   return (
-    <div className="App" css={AppStyle}>
+    <div className="App" css={appStyle}>
       <div css={backgroundImageStyle}>
         <section>
           <header css={navBarStyle}>
@@ -64,7 +64,7 @@ function App() {
       </div>
       <div css={basicBackgroundColor}>
         <section>
-          <div css={logosStyle}>
+          {/* <div css={logosStyle}>
             <a href="logoOne" className="logoOne">
               1
             </a>
@@ -86,7 +86,7 @@ function App() {
             <a href="logoSeven" className="logoSeven">
               7
             </a>
-          </div>
+          </div> */}
           <br />
           <br />
           <div css={reliableDesignersHeadingStyle}>
@@ -143,28 +143,41 @@ function App() {
             </h2>
           </div>
           <div css={designCommunicationDeadlineHeadingStyle}>
-            <div className="designsHeadingSection">
-              <h3>Breath-taking Designs</h3>
-              <br />
-              <p>
-                All of our designers are carefully vetted and have years of
-                experience working in the design industry.
-              </p>
-              <br />
-              <p>
-                You'll get a dedicated UI Designer, Graphic Designer,
-                Illustrator and Project Manager. With a full design team,
-                getting breath-taking designs couldn't be any easier!
-              </p>
-            </div>
-            <div className="communicationHeadingSection">
-              <h3>Communication That Matters</h3>
-              <br />
-              <p>
-                With a dedicated Project Manager who cares about your success
-                and direct live-chat access to your experienced designers,
-                communication issues will be no more!
-              </p>
+            <div css={designCommunicationHeadingStyle}>
+              <div className="designsHeadingSection">
+                <h3>Breath-taking Designs</h3>
+                <br />
+                <p>
+                  All of our designers are carefully vetted and have years of
+                  experience working in the design industry. You'll get a
+                  dedicated UI Designer, Graphic Designer, Illustrator and
+                  Project Manager. With a full design team, getting
+                  breath-taking designs couldn't be any easier!
+                </p>
+                <div>
+                  <img
+                    src="https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/6058a4ed70247fe93988cbbb_3.1%20v2.svg"
+                    alt="picFour"
+                    className="picFour"
+                  />
+                </div>
+              </div>
+              <div className="communicationHeadingSection">
+                <h3>Communication That Matters</h3>
+                <br />
+                <p>
+                  With a dedicated Project Manager who cares about your success
+                  and direct live-chat access to your experienced designers,
+                  communication issues will be no more!
+                </p>
+                <div>
+                  <img
+                    src="https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/5f900b8d8e4a714a2a26e8fa_new%203.2.svg"
+                    alt="picFive"
+                    className="picFive"
+                  />
+                </div>
+              </div>
             </div>
             <div className="deadlinesHeadingSection">
               <h3>No More Missed Deadlines</h3>
@@ -179,6 +192,13 @@ function App() {
                 days. Simpler tasks such as graphic designs and revisions will
                 be delivered within 24 hours.
               </p>
+              <div>
+                <img
+                  src="https://global-uploads.webflow.com/5dd3495558fd7f3d1fcb52bc/5f8d59eb4f0e8d45e9d8ea1b_(3.3)%20%5BSECTION%20-%20It%20doesn%27t%20have%20to%20be%20that%20way%5D%20Communication%20-%20Illustrations%20v2.svg"
+                  alt="picSix"
+                  className="picSix"
+                />
+              </div>
             </div>
           </div>
         </section>
